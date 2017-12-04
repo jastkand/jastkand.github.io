@@ -1,26 +1,29 @@
-title: Andrey Krivko
-email:
-description: >-
-  I will write an awesome description here. Later.
+theme: jekyll-theme-primer
+
+title: Notes
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jastkand
-github_username:  jastkand
+repository: "jastkand/krivko.me"
+
+paginate: 5
+paginate_path: "/page/:num/"
+
+permalink: pretty
+
+author:
+  name: Andrey Krivko
+  twitter: jastkand
+  github: jastkand
 
 # Build settings
 markdown: kramdown
-theme: minima
 plugins:
   - jekyll-feed
 
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+defaults:
+  - scope:
+      path: "_posts"
+      type: posts
+    values:
+      layout: post
+      read_time: true

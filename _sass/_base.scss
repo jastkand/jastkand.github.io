@@ -1,0 +1,15 @@
+.container-lg {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.site-header {
+  nav {
+    margin-top: 1em;
+  }
+}
+
+.site-content {
+  flex: 1;
+}

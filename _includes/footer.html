@@ -1,0 +1,47 @@
+<footer class="site-footer">
+  <div class="copyright">
+    {% if site.copyright %}
+      {{ site.copyright | markdownify }}
+    {% else %}
+      <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}.</p>
+    {% endif %}
+  </div>
+
+  <ul class="contacts">
+    {% if site.email %}
+      <li>
+        <a href="mailto:{{ site.email }}">
+          <span class="icon icon--email">{% include icons/email.svg %}</span>
+          <span class="label">Email</span>
+        </a>
+      </li>
+    {% endif %}
+
+    {% if site.author.github %}
+      <li>
+        <a href="https://github.com/{{ site.author.github }}">
+          <span class="icon icon--github">{% include icons/github.svg %}</span>
+          <span class="label">{{ site.author.github }}</span>
+        </a>
+      </li>
+    {% endif %}
+
+    {% if site.author.twitter %}
+      <li>
+        <a href="https://twitter.com/{{ site.author.twitter }}">
+          <span class="icon icon--twitter">{% include icons/twitter.svg %}</span>
+          <span class="label">{{ site.author.twitter }}</span>
+        </a>
+      </li>
+    {% endif %}
+
+    {% if site.plugins contains 'jekyll-feed' %}
+      <li>
+        <a href="{{ site.feed.path | default: 'feed.xml' | relative_url }}" title="Atom Feed">
+          <span class="icon icon--rss">{% include icons/rss.svg %}</span>
+          <span class="label">Subscribe</span>
+        </a>
+      </li>
+    {% endif %}
+  </ul>
+</footer>

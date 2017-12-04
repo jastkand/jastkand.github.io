@@ -1,0 +1,16 @@
+.site-footer {
+  .copyright {
+    display: inline-block;
+  }
+
+  .contacts {
+    list-style: none;
+    display: inline-block;
+    text-align: right;
+
+    li {
+      display: inline-block;
+      margin-right: 1em;
+    }
+  }
+}

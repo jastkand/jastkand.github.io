@@ -1,0 +1,16 @@
+.entry-meta {
+  a {
+    color: inherit;
+  }
+
+  .byline-item {
+    &:not(:first-child) {
+      margin-left: 1.5rem;
+    }
+  }
+
+  .icon {
+    margin-right: 0.5em;
+    fill: $accent-color;
+  }
+}

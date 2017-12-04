@@ -1,9 +1,9 @@
 ---
-layout: post
 title:  "How to stub an Upload request to Google API using webmock"
 date:   2017-11-17
 categories: ruby rspec webmock
 ---
+
 The `google-api-client` gem doesn't return any response for an upload request when the
 `X-Goog-Upload-Status` is not set to `'final'`.
 
