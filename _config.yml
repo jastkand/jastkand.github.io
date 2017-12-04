@@ -8,7 +8,7 @@ repository: "jastkand/jastkand.github.io"
 paginate: 5
 paginate_path: "/page/:num/"
 
-permalink: pretty
+permalink: "/:year/:month/:day/:title/"
 
 author:
   name: Andrey Krivko
