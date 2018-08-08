@@ -1,14 +1,14 @@
 theme: jekyll-theme-primer
 
-title: Notes
+title: krivko.me
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 repository: "jastkand/jastkand.github.io"
 
 paginate: 5
-paginate_path: "/page/:num/"
+paginate_path: "/notes/page/:num/"
 
-permalink: "/:year/:month/:day/:title/"
+permalink: "/notes/:year/:month/:day/:title/"
 
 author:
   name: Andrey Krivko
@@ -21,6 +21,9 @@ google_analytics: "UA-48014769-4"
 markdown: kramdown
 plugins:
   - jekyll-feed
+
+exclude:
+  - README.md
 
 defaults:
   - scope:
