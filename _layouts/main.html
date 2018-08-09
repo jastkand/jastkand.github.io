@@ -8,15 +8,10 @@
     <link href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}" rel="stylesheet">
   </head>
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
-    <div class="container-lg px-3 markdown-body">
-      <header class="site-header">
-        <nav>
-          <a href="{{ "/" | absolute_url }}">Home</a>
-          <a href="{{ "/notes" | absolute_url }}">Notes</a>
-        </nav>
-      </header>
+    <div class="container">
+      {% include header.html %}
 
-      <main class="site-content">
+      <main class="content">
         {{ content }}
       </main>
 

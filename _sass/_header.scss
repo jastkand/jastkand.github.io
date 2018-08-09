@@ -1,0 +1,45 @@
+.header {
+  display: flex;
+  height: 100px;
+  align-items: center;
+  justify-content: space-between;
+
+  .logo {
+    color: #272727;
+    font-size: 2em;
+    font-weight: bold;
+  }
+
+  .navbar {
+    .navbar-item {
+      position: relative;
+      color: #272727;
+      padding: 1em 0;
+      font-size: 1.1em;
+      font-weight: bold;
+
+      &::after {
+        position: absolute;
+        content: ' ';
+        bottom: 0;
+        height: 2px;
+        background: #272727;
+        width: 0;
+        left: 0;
+        transition: width .5s cubic-bezier(.26, .82, .76, 1.06);
+      }
+
+      &:hover {
+        text-decoration: none;
+
+        &::after {
+          width: 100%;
+        }
+      }
+    }
+
+    .navbar-item + .navbar-item {
+      margin-left: 2em;
+    }
+  }
+}

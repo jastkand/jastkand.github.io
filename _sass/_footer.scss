@@ -1,16 +1,24 @@
-.site-footer {
+.footer {
+  display: flex;
+  margin-top: auto;
+  justify-content: space-between;
+  height: 60px;
+  align-items: center;
+
   .copyright {
-    display: inline-block;
+    font-size: 0.8em;
   }
 
   .contacts {
+    display: flex;
     list-style: none;
-    display: inline-block;
-    text-align: right;
 
     li {
-      display: inline-block;
-      margin-right: 1em;
+      margin-right: 2em;
+    }
+
+    svg {
+      fill: #272727;
     }
   }
 }
