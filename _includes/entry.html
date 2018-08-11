@@ -16,7 +16,7 @@
   <div class="entry-excerpt">
     {% if post.excerpt %}
       {{ post.excerpt | markdownify }}
-      <p><a href="{{ post.url | relative_url }}" class="more-link">Read More <span class="icon icon--arrow-right">{% include icons/arrow-right.svg %}</span></a></p>
+      <a href="{{ post.url | relative_url }}" class="more-link">Read More <span class="icon icon--arrow-right">{% include icons/arrow-right.svg %}</span></a>
     {% endif %}
   </div>
 </article>

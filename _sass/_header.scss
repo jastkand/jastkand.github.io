@@ -5,7 +5,7 @@
   justify-content: space-between;
 
   .logo {
-    color: #272727;
+    color: var(--link-color);
     font-size: 2em;
     font-weight: bold;
   }
@@ -13,7 +13,7 @@
   .navbar {
     .navbar-item {
       position: relative;
-      color: #272727;
+      color: var(--link-color);
       padding: 1em 0;
       font-size: 1.1em;
       font-weight: bold;
@@ -23,7 +23,7 @@
         content: ' ';
         bottom: 0;
         height: 2px;
-        background: #272727;
+        background: var(--link-color);
         width: 0;
         left: 0;
         transition: width .5s cubic-bezier(.26, .82, .76, 1.06);
