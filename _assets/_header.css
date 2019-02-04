@@ -9,37 +9,4 @@
     font-size: 2em;
     font-weight: bold;
   }
-
-  .navbar {
-    .navbar-item {
-      position: relative;
-      color: var(--link-color);
-      padding: 1em 0;
-      font-size: 1.1em;
-      font-weight: bold;
-
-      &::after {
-        position: absolute;
-        content: ' ';
-        bottom: 0;
-        height: 2px;
-        background: var(--link-color);
-        width: 0;
-        left: 0;
-        transition: width .5s cubic-bezier(.26, .82, .76, 1.06);
-      }
-
-      &:hover {
-        text-decoration: none;
-
-        &::after {
-          width: 100%;
-        }
-      }
-    }
-
-    .navbar-item + .navbar-item {
-      margin-left: 2em;
-    }
-  }
 }
