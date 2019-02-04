@@ -16,10 +16,10 @@
       </li>
     {% endif %}
 
-    {% if site.plugins contains 'jekyll-feed' %}
+    {% if site.author.devto %}
       <li>
-        <a href="{{ site.feed.path | default: 'feed.xml' | relative_url }}" title="Atom Feed">
-          <span class="icon icon--rss">{% include icons/rss.svg %}</span>
+        <a href="https://dev.to/{{ site.author.devto }}" target="_blank">
+          <span class="icon icon--devto">{% include icons/devto.svg %}</span>
         </a>
       </li>
     {% endif %}
