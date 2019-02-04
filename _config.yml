@@ -23,6 +23,10 @@ plugins:
   - jekyll-feed
 
 exclude:
+  - node_modules
+  - package.json
+  - .cache
+  - .postcssrc
   - README.md
 
 defaults:

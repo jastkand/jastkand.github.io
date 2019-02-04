@@ -1,7 +1,7 @@
 # Development
 
 ```
-bundle exec jekyll s
+yarn watch
 ```
 
 # Deploy
