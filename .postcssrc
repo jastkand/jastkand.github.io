@@ -3,6 +3,7 @@
     "autoprefixer": true,
     "postcss-import": {},
     "postcss-preset-env": {},
-    "postcss-nested": {}
+    "postcss-nested": {},
+    "postcss-normalize": {}
   }
 }
