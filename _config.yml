@@ -5,11 +5,6 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 repository: "jastkand/jastkand.github.io"
 
-paginate: 5
-paginate_path: "/notes/page/:num/"
-
-permalink: "/notes/:year/:month/:day/:title/"
-
 author:
   name: Andrey Krivko
   twitter: jastkand
@@ -17,22 +12,9 @@ author:
 
 google_analytics: "UA-48014769-4"
 
-# Build settings
-markdown: kramdown
-plugins:
-  - jekyll-feed
-
 exclude:
   - node_modules
   - package.json
   - .cache
   - .postcssrc
   - README.md
-
-defaults:
-  - scope:
-      path: "_posts"
-      type: posts
-    values:
-      layout: post
-      read_time: true
