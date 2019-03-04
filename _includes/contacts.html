@@ -1,0 +1,19 @@
+<div class="resource_list">
+  {% if site.author.github %}
+    <a class="resource_list__item" href="https://github.com/{{ site.author.github }}" target="_blank">
+      <span class="icon icon--github">{% include icons/github.svg %}</span>
+    </a>
+  {% endif %}
+
+  {% if site.author.twitter %}
+    <a class="resource_list__item" href="https://twitter.com/{{ site.author.twitter }}" target="_blank">
+      <span class="icon icon--twitter">{% include icons/twitter.svg %}</span>
+    </a>
+  {% endif %}
+
+  {% if site.author.devto %}
+    <a class="resource_list__item" href="https://dev.to/{{ site.author.devto }}" target="_blank">
+      <span class="icon icon--devto">{% include icons/devto.svg %}</span>
+    </a>
+  {% endif %}
+</div>

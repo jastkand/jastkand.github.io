@@ -1,0 +1,29 @@
+.resource_list {
+  display: flex;
+  flex: 1 1 auto;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  .resource_list__item {
+    flex: 0 1 4em;
+    width: 4em;
+    height: 4em;
+
+    &:hover {
+      svg {
+        fill: var(--link-hover-color);
+      }
+    }
+
+    svg {
+      fill: var(--link-color);
+    }
+
+    .icon {
+      display: block;
+      width: 4em;
+      height: 4em;
+    }
+  }
+}

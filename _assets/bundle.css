@@ -2,7 +2,7 @@
 
 @import "./_variables.css";
 @import "./_base.css";
-@import "./_icons.css";
 @import "./_header.css";
-@import "./_entries.css";
+@import "./_content.css";
+@import "./_resource_list.css";
 @import "./_footer.css";
