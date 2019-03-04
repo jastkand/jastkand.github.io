@@ -11,8 +11,6 @@ author:
   github: jastkand
   devto: jastkand
 
-google_analytics: "UA-48014769-4"
-
 exclude:
   - node_modules
   - package.json
