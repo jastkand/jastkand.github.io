@@ -8,7 +8,7 @@
     "watch": "yarn run watch-frontend & yarn run watch-backend",
     "watch-frontend": "parcel watch _assets/bundle.css -d assets --no-cache",
     "watch-backend": "bundle exec jekyll s",
-    "build": "parcel build _assets/bundle.css -d assets --no-cache"
+    "build": "parcel build _assets/bundle.css -d assets --no-cache --no-source-maps"
   },
   "dependencies": {},
   "devDependencies": {
