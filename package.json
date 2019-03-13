@@ -5,19 +5,21 @@
   "author": "Andrey Krivko <jastkand@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "watch": "yarn run watch-frontend & yarn run watch-backend",
-    "watch-frontend": "parcel watch _assets/bundle.css -d assets --no-cache",
-    "watch-backend": "bundle exec jekyll s",
-    "build": "parcel build _assets/bundle.css -d assets --no-cache --no-source-maps"
+    "dev": "parcel serve src/index.pug",
+    "watch": "parcel watch src/index.pug --no-cache",
+    "build": "parcel build src/index.pug --no-cache --no-source-maps"
   },
-  "dependencies": {},
+  "dependencies": {
+  },
   "devDependencies": {
     "caniuse-lite": "^1.0.30000697",
     "cssnano": "^4.1.10",
+    "parcel-bundler": "^1.12.0",
     "postcss-import": "^12.0.1",
     "postcss-nested": "^4.1.2",
     "postcss-normalize": "^7.0.1",
-    "postcss-preset-env": "^6.6.0"
+    "postcss-preset-env": "^6.6.0",
+    "pug": "^2.0.3"
   },
   "browserslist": "last 2 versions"
 }

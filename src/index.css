@@ -1,4 +1,12 @@
-@import "./_variables.css";
+@import-normalize;
+
+:root {
+  --background-color: #FBFBFB;
+  --link-color: #272727;
+  --link-hover-color: #333333;
+  --accent-color: #00848A;
+  --mono-font: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
 
 body {
   background: var(--background-color);
@@ -18,3 +26,13 @@ a {
   grid-template-rows: 100px 1fr 60px;
   min-height: 100vh;
 }
+
+.content {
+  grid-column: 2;
+  grid-row: 2;
+  display: flex;
+}
+
+@import "./header/styles.css";
+@import "./contacts/styles.css";
+@import "./footer/styles.css";

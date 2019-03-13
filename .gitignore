@@ -1,7 +1,5 @@
-_site
-.cache
-.sass-cache
-.jekyll-metadata
-assets
 node_modules
 yarn-error.log
+
+dist/
+.cache

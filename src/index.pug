@@ -1,0 +1,18 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1')
+
+    include seo/seo.pug
+
+    link(rel='stylesheet' href='/index.css')
+
+  body(class='layout')
+    div(class='container')
+      include header/header.pug
+
+      main(class='content')
+        include contacts/contacts.pug
+
+      include footer/footer.pug
