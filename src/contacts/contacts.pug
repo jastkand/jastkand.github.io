@@ -9,6 +9,6 @@ mixin svg-icon(name)
 
 div(class="resource_list")
   each item in contacts
-    a(class="resource_list__item" href=item.href target="_blank")
+    a(class="resource_list__item" href=item.href)
       span(class="icon icon--" + item.name)
         +svg-icon(item.name)
