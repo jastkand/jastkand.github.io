@@ -1,4 +1,10 @@
 .resource_list {
+  --resource-icon-size: 4em;
+
+  @media (width <= 30em) {
+    --resource-icon-size: 3em;
+  }
+
   display: flex;
   flex: 1 1 auto;
   align-items: center;
@@ -6,9 +12,9 @@
   flex-wrap: wrap;
 
   .resource_list__item {
-    flex: 0 1 4em;
-    width: 4em;
-    height: 4em;
+    flex: 0 1 var(--resource-icon-size);
+    width: var(--resource-icon-size);
+    height: var(--resource-icon-size);
 
     &:hover {
       svg {
@@ -22,8 +28,8 @@
 
     .icon {
       display: block;
-      width: 4em;
-      height: 4em;
+      width: var(--resource-icon-size);
+      height: var(--resource-icon-size);
     }
   }
 }
