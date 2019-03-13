@@ -21,5 +21,21 @@
     "postcss-preset-env": "^6.6.0",
     "pug": "^2.0.3"
   },
-  "browserslist": "last 2 versions"
+  "browserslist": [
+    "last 2 versions",
+    "not dead",
+    "not ie 11",
+    "not ie_mob 11",
+    "not op_mini all",
+    "not op_mob > 0",
+    "not and_qq > 0",
+    "not android > 0"
+  ],
+  "postcss": {
+    "plugins": {
+      "postcss-normalize": {},
+      "postcss-nested": {},
+      "postcss-preset-env": {}
+    }
+  }
 }
