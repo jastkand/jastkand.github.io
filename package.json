@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "rm -rf ./.parcel-cache && parcel serve src/index.pug",
     "watch": "parcel watch src/index.pug --no-cache",
-    "build": "parcel build src/index.pug --no-cache --no-source-maps"
+    "build": "rm -rf ./dist && parcel build src/index.pug --no-cache --no-source-maps"
   },
   "dependencies": {
     "normalize.css": "^8.0.1"
