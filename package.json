@@ -6,7 +6,6 @@
   "license": "MIT",
   "scripts": {
     "dev": "rm -rf ./.parcel-cache && parcel serve src/index.pug",
-    "watch": "parcel watch src/index.pug --no-cache",
     "build": "rm -rf ./dist && parcel build src/index.pug --no-cache --no-source-maps"
   },
   "dependencies": {

@@ -1,7 +1,7 @@
 # Development
 
 ```
-yarn watch
+yarn dev
 ```
 
 # Deploy
