@@ -1,25 +1,26 @@
 {
   "name": "krivko.me",
-  "version": "1.0.0",
+  "private": true,
   "repository": "git@github.com:jastkand/jastkand.github.io.git",
   "author": "Andrey Krivko <jastkand@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "parcel serve src/index.pug",
+    "dev": "rm -rf ./.parcel-cache && parcel serve src/index.pug",
     "watch": "parcel watch src/index.pug --no-cache",
     "build": "parcel build src/index.pug --no-cache --no-source-maps"
   },
   "dependencies": {
+    "normalize.css": "^8.0.1"
   },
   "devDependencies": {
-    "caniuse-lite": "^1.0.30000697",
-    "cssnano": "^4.1.10",
-    "parcel-bundler": "^1.12.0",
-    "postcss-import": "^12.0.1",
-    "postcss-nested": "^4.1.2",
-    "postcss-normalize": "^7.0.1",
-    "postcss-preset-env": "^6.6.0",
-    "pug": "^2.0.3"
+    "@parcel/transformer-pug": "2.0.0-beta.3.1",
+    "browserslist": "^4.16.6",
+    "caniuse-lite": "^1.0.30001230",
+    "parcel": "^2.0.0-beta.3.1",
+    "postcss": "^8.3.0",
+    "postcss-import": "^14.0.2",
+    "postcss-nested": "^5.0.5",
+    "pug": "^3.0.2"
   },
   "browserslist": [
     "last 2 versions",
@@ -30,12 +31,5 @@
     "not op_mob > 0",
     "not and_qq > 0",
     "not android > 0"
-  ],
-  "postcss": {
-    "plugins": {
-      "postcss-normalize": {},
-      "postcss-nested": {},
-      "postcss-preset-env": {}
-    }
-  }
+  ]
 }
